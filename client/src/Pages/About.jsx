@@ -5,14 +5,14 @@ import woman from '../public/senior-woman-talking-with-her-doctor.jpg'
 function InformationCard({isReversed, title, description, image, alt}) {
     const Desc = () => <>
         <div className='flex flex-col content-center w-full sm:w-1/2'>
-            <h2 className='m-0 text-center sm:text-left'>{title}</h2>
-            <p className='text-center sm:text-left'>{description}</p>
+            <h2 className='m-0 text-center text-4xl sm:text-left'>{title}</h2>
+            <p className='text-center text-2xl sm:text-left'>{description}</p>
         </div>
     </>
-    const Image = () => <img className='w-full sm:w-2/4' src={image} alt={alt}/>
+    const Image = () => <img className='w-full sm:w-2/4 sm:pl-1' src={image} alt={alt}/>
     return (
         // Default is column, switch to row after small size screen
-        <div className='flex flex-col sm:flex-row w-11/12 m-auto mb-10'>
+        <div className='flex flex-col sm:flex-row sm:justify-center w-11/12 m-auto mb-10'>
             {isReversed ? <Image/> : <Desc/>}
             {isReversed ? <Desc/> : <Image/>}
         </div>
@@ -22,8 +22,8 @@ function InformationCard({isReversed, title, description, image, alt}) {
 function About() {
     return (
         <div className='w-full'>
-            <h1 className='text-center'>About Us</h1>
-            <div className='w-11/12 m-auto text-center cormorant-garamond-medium-italic text-xl mb-4'>"Compassionate care in the comfort of your home."</div>
+            <h1 className='text-center text-6xl'>About Us</h1>
+            <div className='w-11/12 m-auto text-center cormorant-garamond-medium-italic text-4xl mb-4 pb-1'>"Compassionate care in the comfort of your home."</div>
             <InformationCard
                 title={'Our Mission'}
                 description={'Participate as an active member of the community, in providing and continuously improving home health care services to meet the needs of the client by delivering value-driven, high-quality, and compassionate care.'}
