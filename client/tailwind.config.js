@@ -11,7 +11,10 @@ module.exports = {
         },
         pinkTheme: {
           DEFAULT: '#DC94AC',
-        }
+        },
+        lightBlue: {
+          DEFAULT: '#4d71b8',
+        },
       }
     },
   },

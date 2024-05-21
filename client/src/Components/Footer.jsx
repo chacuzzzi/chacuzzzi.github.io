@@ -1,7 +1,10 @@
 import React from 'react'
 import icon from '../public/logo.png'
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
+  const navigate = useNavigate()
+
   return (
     <div className='w-full bg-blueTheme'>
       <div className='flex flex-col mx-16'>
@@ -11,37 +14,51 @@ function Footer() {
             Divine Care Home Health LLC
           </div>
         </div>
-        <div className='flex justify-center'>
-          <ul className='list-none text-l font-medium flex flex-col p-0 sm:flex-row'>
+        <div className='flex justify-center items-center flex-col'>
+          <ul className='flex space-x-6 list-none text-xl font-semibold px-8 text-pinkTheme m-0'>
+            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => navigate('/about')}>About Us</li>
+            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => navigate('/services')}>Our Services</li>
+            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => navigate('/contact')}>Contact Us</li>
+          </ul>
+          <ul className='list-none text-l font-medium flex flex-col p-0 lg:flex-row items-center lg:items-start'>
             <li>
-              <ul className='list-none p-0 sm:mr-16 text-white'>
-                <li className='text-pinkTheme'>Divine Care Home Health Office:</li>
-                <li className='pl-3'>
+              <ul className='list-none p-0 lg:mr-16 text-white mb-2 sm:mb-0 flex flex-row items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 384 512" className='fill-current text-pinkTheme mr-1'>
+                  <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                </svg>
+                <li>
                   <span>10815 Tobar Falls Cir</span>
                   <br />
                   <span>Houston, TX, 77064</span>
                 </li>
               </ul>
             </li>
-            <li>
-              <ul className='list-none p-0 sm:mr-16 text-white'>
-                <li className='text-pinkTheme'>Email:</li>
-                <li className='pl-3'>admin@divinecarehomehealth.com</li>
-              </ul>
-            </li>
             
             <li>
-              <ul className='list-none p-0 sm:mr-16 text-white'>
-                <li className='text-pinkTheme'>Tel #:</li>
-                <li className='pl-3'>(281) 919-7324</li>
-                <li className='pl-3'>(832) 794-5086</li>
+              <ul className='list-none p-0 lg:mr-16 text-white mb-2 sm:mb-0 flex flex-row items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 384 512" className='fill-current text-pinkTheme mr-1'>
+                  <path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"/>
+                </svg>
+                <ul className='list-none p-0'>
+                  <li>(281) 919-7324</li>
+                  <li>(832) 794-5086</li>
+                </ul>
               </ul>
             </li>
 
             <li>
-              <ul className='list-none p-0 sm:mr-16 text-white'>
+              <ul className='list-none p-0 lg:mr-16 text-white mb-2 sm:mb-02'>
                 <li className='text-pinkTheme'>Fax #:</li>
                 <li className='pl-3'>(281) 885-2606</li>
+              </ul>
+            </li>
+
+            <li>
+              <ul className='list-none p-0 text-white flex flex-row items-center'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 512 512" className='fill-current text-pinkTheme mr-1'>
+                  <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                </svg>
+                <li>admin@divinecarehomehealth.com</li>
               </ul>
             </li>
           </ul>
