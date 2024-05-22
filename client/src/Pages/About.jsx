@@ -44,6 +44,10 @@ function About() {
                 image={woman}
                 alt={'promise'}
             />
+            <div class='flex-col text-center'>
+                <div class='text-4xl'>Interested in joining the team?</div>
+                <button class='w-30 h-10 bg-pinkTheme border-solid border-blueTheme border-2 rounded my-3'>Contact Us</button>
+            </div>
         </div>
     )
 }
