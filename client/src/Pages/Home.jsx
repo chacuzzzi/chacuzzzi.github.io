@@ -19,7 +19,7 @@ function Home() {
       <div className='w-11/12 m-auto text-center'>
         <div className='flex flex-col font-semibold text-4xl'>
           <span>
-            At Divine Care Home Health, we believe in providing exceptional care with a personal touch
+            At Divine Care Home Health, we believe in providing exceptional care with a personal touch.
             Your well-being is our priority, and we are here to support you every step of the way.
           </span>
           <span>

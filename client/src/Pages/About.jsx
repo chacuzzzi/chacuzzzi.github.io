@@ -1,6 +1,6 @@
 import React from 'react'
-import icon from '../public/logo.png'
 import woman from '../public/senior-woman-talking-with-her-doctor.jpg'
+import { useNavigate } from 'react-router-dom'
 
 function InformationCard({isReversed, title, description, image, alt}) {
     const Desc = () => <>
@@ -19,11 +19,18 @@ function InformationCard({isReversed, title, description, image, alt}) {
     )
 }
 
+function ContactButton({buttonText}) {
+    const navigate = useNavigate()
+    return (
+        <button onClick={() => navigate('/contact')} class='p-3 text-center hover:cursor-pointer hover:text-pinkTheme text-blueTheme w-30 h-10 bg-white border-solid border-blueTheme border-2 my-3'>{buttonText}</button>
+    )
+}
+
 function About() {
     return (
         <div className='w-full'>
             <h1 className='text-center text-6xl'>About Us</h1>
-            <div className='w-11/12 m-auto text-center cormorant-garamond-medium-italic text-4xl mb-4 pb-1'>"Compassionate care in the comfort of your home."</div>
+            <div className='w-11/12 m-auto text-center cormorant-garamond-medium-italic text-4xl mb-4 pb-1'>"Compassionate Care in the Comfort of Your Home."</div>
             <InformationCard
                 title={'Our Mission'}
                 description={'Participate as an active member of the community, in providing and continuously improving home health care services to meet the needs of the client by delivering value-driven, high-quality, and compassionate care.'}
@@ -44,9 +51,9 @@ function About() {
                 image={woman}
                 alt={'promise'}
             />
-            <div class='flex-col text-center'>
+            <div class='flex-col text-center mb-4'>
                 <div class='text-4xl'>Interested in joining the team?</div>
-                <button class='w-30 h-10 bg-pinkTheme border-solid border-blueTheme border-2 rounded my-3'>Contact Us</button>
+                <ContactButton buttonText='Contact Us'/>
             </div>
         </div>
     )
