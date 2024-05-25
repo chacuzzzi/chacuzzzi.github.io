@@ -28,7 +28,7 @@ function ContactButton({buttonText}) {
 
 function About() {
     return (
-        <div className='w-full'>
+        <div className='w-full pt-20'>
             <h1 className='text-center text-6xl'>About Us</h1>
             <div className='w-11/12 m-auto text-center cormorant-garamond-medium-italic text-4xl mb-4 pb-1'>"Compassionate Care in the Comfort of Your Home."</div>
             <InformationCard
