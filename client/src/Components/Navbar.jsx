@@ -17,7 +17,7 @@ function Navbar() {
   }
   
   return (
-    <div className='w-full bg-blueTheme top-0 fixed z-100'>
+    <div className='w-full bg-blueTheme top-0 fixed z-50'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center text-white hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/')}>
           <img src={icon} className='m-2 w-12 sm:w-16' alt='Divine Care Home Health LLC'></img>

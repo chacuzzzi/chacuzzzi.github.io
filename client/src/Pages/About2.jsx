@@ -21,20 +21,20 @@ function InformationCard({title, description, image, alt, visible}) {
 function ContactButton({buttonText}) {
     const navigate = useNavigate()
     return (
-        <button onClick={() => navigate('/contact')} class='p-3 text-center hover:cursor-pointer hover:text-pinkTheme text-blueTheme w-30 h-10 bg-white border-solid border-blueTheme border-2 my-3'>{buttonText}</button>
+        <button onClick={() => navigate('/contact')} class='text-xl text-center hover:border-pinkTheme hover:cursor-pointer hover:text-pinkTheme text-blueTheme w-1/6 h-10 bg-white border-solid border-blueTheme border-2 my-3'>{buttonText}</button>
     )
 }
 
 function About() {
     return (<div className=''>
+        <div className='top-[100px] left-[3%] text-white border-solid border-pinkTheme w-1/5 absolute bg-blueTheme z-0'>
+            <h1 className='text-center text-6xl'>About Us</h1>
+            <div className='text-center cormorant-garamond-medium-italic text-2xl mb-4 mx-2 pb-1'>"Compassionate Care in the Comfort of Your Home."</div>
+        </div>
         <div className='bg-white h-40'>
         </div>
 
         <div className='flex bg-blueTheme text-white'>
-            <div style={{top:'100px', left:'3%'}} className='z-10 border-solid border-pinkTheme w-1/5 absolute bg-blueTheme'>
-                <h1 className='text-center text-6xl'>About Us</h1>
-                <div className='text-center cormorant-garamond-medium-italic text-2xl mb-4 mx-2 pb-1'>"Compassionate Care in the Comfort of Your Home."</div>
-            </div>
             <div className='flex'>
                 <InformationCard 
                     visible={false}
