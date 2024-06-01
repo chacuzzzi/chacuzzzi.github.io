@@ -45,7 +45,7 @@ function Home() {
         </div>
         <div className='w-full lg:w-1/2 h-96 sm:h-[500px] absolute'>
           <div className='h-full flex flex-col items-center justify-center z-10'>
-            <span className='font-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black text-center sm:hidden'>Divine Care Home Health LLC</span>
+            <span className='font-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-lightBlue text-center sm:hidden'>Divine Care Home Health LLC</span>
             <img src={icon} alt='Elderly and nurse smiling' className='h-1/2'></img>
             <div className='font-black italic text-2xl md:text-4xl text-blueTheme text-center'>
               <span>"Compassionate Care in the</span>
