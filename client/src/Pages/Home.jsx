@@ -40,32 +40,26 @@ function Home() {
 
   return (
     <div className='w-full pb-10 sm:pt-0 pt-16'>
-      <div className='flex flex-row z-10 relative mb-10'>
-        <div className='w-full h-96 sm:h-[500px] bg-cover bg-center bg-no-repeat relative opacity-75 sm:opacity-100' style={{backgroundImage: `url(${banner})`, backgroundPosition: 'calc(85%) top', filter: 'blur(0px)'}}>
+      <div className='flex flex-row z-40 relative mb-10'>
+        <div className='w-full h-96 sm:h-[500px] bg-cover bg-center bg-no-repeat relative opacity-25 lg:opacity-100' style={{backgroundImage: `url(${banner})`, backgroundPosition: 'calc(85%) top', filter: 'blur(0px)'}}>
         </div>
-        <div className='w-full sm:w-1/2 h-96 sm:h-[500px] absolute'>
+        <div className='w-full lg:w-1/2 h-96 sm:h-[500px] absolute'>
           <div className='h-full flex flex-col items-center justify-center z-10'>
-            <span className='font-black sm:block text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-blueTheme text-center'>Divine Care Home Health LLC</span>
+            <span className='font-black text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black text-center sm:hidden'>Divine Care Home Health LLC</span>
             <img src={icon} alt='Elderly and nurse smiling' className='h-1/2'></img>
-            <div className='font-black italic text-2xl lg:text-3xl xl:text-4xl text-pinkTheme sm:text-pinkTheme text-center'>
+            <div className='font-black italic text-2xl md:text-4xl text-blueTheme text-center'>
               <span>"Compassionate Care in the</span>
               <br />
               <span>Comfort of Your Home"</span>
             </div>
           </div>
         </div>
-        <div className='absolute top-0 right-0'>
-          <ul className='list-none hidden sm:flex flex-row p-0 m-4 text-3xl lg:text-4xl font-bold text-blueTheme space-x-6'>
-            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => navigate('/about')}>About Us</li>
-            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => navigate('/contact')}>Contact Us</li>
-          </ul>
-        </div>
       </div>
-      <div className='flex flex-col sm:flex-row justify-center items-center sm:items-start sm:space-x-8'>
-        <div className='flex flex-col w-full sm:w-1/2'>
+      <div className='flex flex-col xl:flex-row justify-center items-center xl:items-start xl:space-x-8 xl:space-y-0'>
+        <div className='flex flex-col w-full mb-5 xl:mb-0 sm:w-1/2'>
           <img src={servicePic} alt='Nurse taking care of elderly man'/>
         </div>
-        <div className='flex flex-col w-3/4 sm:w-1/4 justify-center sm:justify-normal items-center space-y-4 pt-4 sm:pt-0'>
+        <div className='flex flex-col w-3/4 xl:w-1/4 justify-center sm:justify-normal items-center space-y-4 pt-4 sm:pt-0'>
           <span className='text-5xl font-bold text-center'>Our Services</span>
           <p className='text-3xl font-semibold text-center'>
             At Divine Care Home Health, we offer a comprehensive range of home health care services tailored to meet the unique needs of each individual.
@@ -114,6 +108,7 @@ function Home() {
 
       </div>
       <div className='w-11/12 m-auto'>
+        {/*
         <div className='flex flex-col sm:flex-row justify-between h-auto sm:h-40 lg:h-52 p-0 text-pinkTheme text-xl'>
           <ul className='list-none px-4 py-2 bg-white sm:w-1/4 rounded-md shadow-lg'>
             <li className='h-3/4 items-end'>
@@ -140,6 +135,7 @@ function Home() {
             </li>
           </ul>
         </div>
+        */}
       </div>
     </div>
   )

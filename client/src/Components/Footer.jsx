@@ -8,9 +8,9 @@ function Footer() {
   return (
     <div className='w-full bg-blueTheme'>
       <div className='flex flex-col mx-16'>
-        <div className='flex items-center justify-center'>
-          <img src={icon} width={75} className='mx-2 mt-2' alt='Divine Care Home Health LLC'></img>
-          <div className='font-semibold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
+        <div className='flex flex-col sm:flex-row items-center justify-center'>
+          <img src={icon} width={50} className='m-2' alt='Divine Care Home Health LLC'></img>
+          <div className='font-semibold text-white text-xl sm:text-2xl md:text-3xl text-center'>
             Divine Care Home Health LLC
           </div>
         </div>
