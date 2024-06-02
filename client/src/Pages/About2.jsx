@@ -32,19 +32,19 @@ function Indicator({cardIndex, setCardIndex}) {
     // https://fontawesome.com/icons/angles-right?f=classic&s=solid
     const LeftAngle = () => <svg onClick={() => setCardIndex(cardIndex-1)} className='w-4 fill-white hover:cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/></svg>
 
-    const RightArrow = () => <svg onClick={() => setCardIndex(cardIndex+1)} className='w-3 fill-white hover:cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
+    const RightArrow = () => <svg onClick={() => setCardIndex(cardIndex+1)} className='w-3 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"/></svg>
 
-    const RightAngle = () => <svg onClick={() => setCardIndex(cardIndex+1)} className='w-4 fill-white hover:cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+    const RightAngle = () => <svg onClick={() => setCardIndex(cardIndex+1)} className='w-4 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
 
-    const PinkCircle = () => <svg className='w-3 fill-pinkTheme' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
-    const WhiteCircle = () => <svg className='w-3 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+    const PinkCircle = ({position}) => <svg onClick={() => setCardIndex(position)} className='w-3 fill-pinkTheme' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+    const WhiteCircle = ({position}) => <svg onClick={() => setCardIndex(position)} className='w-3 fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
 
     return <>
         <div className='sm:hidden mt-0 pb-3 flex justify-center space-x-5'>
             <LeftAngle/>
-            {cardIndex % 3 === 0 ? <PinkCircle/> : <WhiteCircle/>}
-            {cardIndex % 3 === 1 ? <PinkCircle/> : <WhiteCircle/>}
-            {cardIndex % 3 === 2 ? <PinkCircle/> : <WhiteCircle/>}
+            {cardIndex % 3 === 0 ? <PinkCircle position={0}/> : <WhiteCircle position={0}/>}
+            {cardIndex % 3 === 1 ? <PinkCircle position={1}/> : <WhiteCircle position={1}/>}
+            {cardIndex % 3 === 2 ? <PinkCircle position={2}/> : <WhiteCircle position={2}/>}
             <RightAngle/>
         </div>
     </>

@@ -67,7 +67,7 @@ function Footer() {
           </ul>
         </div>
         <div className='flex w-full justify-center m-2'>
-          <span className='text-pinkTheme text-l font-medium'>© 2024 Divine Care Home Health - All Rights Reserved</span>
+          <span className='text-center text-pinkTheme text-l font-medium'>© 2024 Divine Care Home Health - All Rights Reserved</span>
         </div>
       </div>
     </div>
