@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8b314bbe.css",
-    "main.js": "/static/js/main.53d030e5.js",
+    "main.js": "/static/js/main.829c1c91.js",
     "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
     "static/media/senior-woman-talking-with-her-doctor.jpg": "/static/media/senior-woman-talking-with-her-doctor.cf6b9216c0e5640d88e7.jpg",
     "static/media/elderly-man-receiving-care-from-a-health-care-physical-therapy-nurse-photo.jpg": "/static/media/elderly-man-receiving-care-from-a-health-care-physical-therapy-nurse-photo.5befdf8993d5dfcc553d.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.png": "/static/media/logo.78b6093ee8192d5e9601.png",
     "index.html": "/index.html",
     "main.8b314bbe.css.map": "/static/css/main.8b314bbe.css.map",
-    "main.53d030e5.js.map": "/static/js/main.53d030e5.js.map",
+    "main.829c1c91.js.map": "/static/js/main.829c1c91.js.map",
     "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b314bbe.css",
-    "static/js/main.53d030e5.js"
+    "static/js/main.829c1c91.js"
   ]
 }
