@@ -50,6 +50,7 @@ function HomeNavbar({ handleNavigation, menuOpen, toggleMenu }) {
 
       <div>
         <ul className={`lg:hidden m-0 flex flex-col list-none text-xl font-semibold px-8 text-right ${scrollable ? 'text-white' : 'text-white md:text-blueTheme'} ${menuOpen ? 'block' : 'hidden'}`}>
+          <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/')}>Home</li>
           <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/about')}>About Us</li>
           <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/contact')}>Contact Us</li>
         </ul>
@@ -80,6 +81,7 @@ function DefaultNavbar({ handleNavigation, menuOpen, toggleMenu }) {
           </div>
           
           <ul className='lg:flex space-x-10 list-none text-2xl font-semibold px-8 hidden'>
+            <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/')}>Home</li>
             <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/about')}>About Us</li>
             <li className='hover:cursor-pointer hover:text-pinkTheme' onClick={() => handleNavigation('/contact')}>Contact Us</li>
           </ul>
