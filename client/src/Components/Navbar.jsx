@@ -113,6 +113,7 @@ function Navbar() {
   const handleNavigation = (route) => {
     setMenuOpen(false)
     navigate(route)
+    window.scrollTo(0, 0)
   }
   
   return (

@@ -5,6 +5,11 @@ import { useNavigate } from 'react-router-dom'
 function Footer() {
   const navigate = useNavigate()
 
+  const handleNavigation = (route) => {
+    navigate(route)
+    window.scrollTo(0, 0)
+  }
+
   return (
     <div className='w-full bg-blueTheme'>
       <div className='flex flex-col mx-16'>
@@ -16,8 +21,8 @@ function Footer() {
         </div>
         <div className='flex justify-center items-center flex-col'>
           <ul className='flex flex-col sm:flex-row sm:space-x-6 list-none p-0 text-xl font-semibold text-pinkTheme m-0 text-center'>
-            <li className='hover:cursor-pointer hover:text-white' onClick={() => navigate('/about')}>About Us</li>
-            <li className='hover:cursor-pointer hover:text-white' onClick={() => navigate('/contact')}>Contact Us</li>
+            <li className='hover:cursor-pointer hover:text-white' onClick={() => handleNavigation('/about')}>About Us</li>
+            <li className='hover:cursor-pointer hover:text-white' onClick={() => handleNavigation('/contact')}>Contact Us</li>
           </ul>
           <li className='list-none text-xl text-pinkTheme mt-2 text-center flex flex-col sm:block'>
             Business Hours:
