@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Favicon
+Favicons, apple and android browser icons were generated with: [Favicon Generator](https://realfavicongenerator.net/) using the logo.png (639x639) image.
+
 ## Deployment
 
 Refer to [](https://github.com/gitname/react-gh-pages) for steps on deploying changes. You can run `npm run deploy` to build and deploy your changes.
